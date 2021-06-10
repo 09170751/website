@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--分頁顯示的名稱  A-4 -->
+<title>Q and A</title>
+		
+<!--  引入自己寫的CSS  A-2-->
+<link href="../../../Downloads/9901391/style.css" rel="stylesheet" type="text/css">
+	
+<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-2 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+       
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+		
+<section id="bar">
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link" href="../../../Downloads/9901391/index.html"> 首頁 <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="../../../Downloads/9901391/intro.html">自我介紹</a>
+					<a class="nav-item nav-link active" href="../../../Downloads/9901391/QA.html">QandA</a> 
+					<a class="nav-item nav-link" href="contactus.html">聯絡我們</a>
+						
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+	
+	
+<!--
+<section id="QAsecond">
+<div class="container">
+	<div class="row">
+		<div class="col-8 offset-2">
+-->
+<div class="accordion" id="accordionExample">
+<!--第一張卡片-->
+  <div class="card">
+      <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       富蘭克林
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body bodybg">
+     蘭克林於1988年出生在洛聖都南部出生。當他還尚且年幼時，他對他的父母均是古柯鹼成癮者一事毫不知情。同時，這時期的富蘭克林還時常能聽聞到有關他的父親對他的母親實施家庭暴力的故事，這可能直接致使富蘭克林的母親對古柯鹼上癮的原因之一。富蘭克林的父親在她母親懷上富蘭克林後就拋棄了他的母親。他的母親在他出生不久後也因為毒品成癮症逝世了。
+      </div>
+    </div>
+  </div>
+  
+  <!--第二張卡片-->
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        麥可
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body bodybg2">
+        麥克是一個白人男性，有灰黑色的頭髮和綠色的眼睛。他有著裂下巴和髮型，他的臉上有著較短的須茬。麥可的身材寬厚，雖然稱不上肥胖，有時也會遭到嘲諷。
+      </div>
+    </div>
+  </div>
+  
+   <!--第三張卡片-->
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          崔佛
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        「他是很怪。他是加拿大最聰明、最強悍、最古怪的孩子......呃，正確來說應該是在美國加拿大邊境區內。這男孩，他擁有一切男孩具備的才華、魅力及小聰明
+      </div>
+    </div>
+   </div>
+	
+<!--	第四張卡片-->
+	<div class="card">
+      <div class="card-header" id="heading4">
+      <h2 class="mb-0">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+          我是圖片
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+      <div class="card-body">
+        <img src="img/Trevor_Philips_Grand_Theft_Auto_V.jpg">
+      </div>
+    </div>
+  </div>
+   
+	
+
+
+  
+   
+</div>
+		
+	
+
+	
+
+</body>
+</html>
